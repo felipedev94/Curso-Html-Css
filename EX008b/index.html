@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+    <style>
+        p{
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte/Pré-formatação</h2>
+    <p><strong>A tag &lt;code&gt; é usada para citar partes de codigos, exemplo:    
+    </strong> document.getElementByid('teste') <strong>sem a tag &lt;code&gt;</strong>
+    <br> <code>document.getElementByid('teste')</code> <strong>com a tag &lt;code&gt;</strong>
+    </p>
+    <p>
+        <strong>
+            Se a citação for de mais de uma linha onde precise de uma formatação melhor usa-se a tag &lt;pre&gt; exemplo de comando sem a tag : <br>
+            
+        </strong>
+        num= int(inoput('Digite um número'))
+        if num % 2 == 0;
+            print (f'O número {num} é PAR')
+        else:
+            Print(f'O número {num} é IMPAR')
+        print ('Fim do programa')
+        <br>
+        <br><strong>Exemplo do mesmo comando com a tag &lt;pre&gt;:</strong>
+        <pre>
+num= int(inoput('Digite um número'))
+if num % 2 == 0;
+    print (f'O número {num} é PAR')
+else:
+    Print(f'O número {num} é IMPAR')
+print ('Fim do programa')
+        </pre>
+    </p>
+    
+    <h2>Citações simples</h2>
+    <p>Caso seja preciso usar uma citação simples existe a tag &lt;q&gt; exemplo: <br>
+    Como diria o pai do amigo do Guanabara: <q>O computador é um burro muito rápido</q>
+    </p>
+    <h2>Citações completas</h2>
+    <p>Para ciações mais completas usa-se a tag &lt;blockquote&gt; a citação usa o link da referencia, porém esse link não aparece para o usuario, serve apenas para o navegador saber onde fica a citação, exemplo: <br>
+        Como esta escrito na biblia em 1° Samuel 8:7-9:
+    </p>
+    <blockquote cite="https://my.bible.com/pt/bible/1840/1SA.8.7-9.NAA">
+        <sup>7</sup>E o Senhor disse a Samuel:
+Atenda à voz do povo em tudo o que lhe pedem. Porque não foi a você que rejeitaram, mas a mim, para que eu não reine sobre eles.<sup>8</sup>Segundo todas as obras que fizeram desde o dia em que os tirei do Egito até hoje, pois me deixaram e serviram outros deuses, assim também estão fazendo com você. <sup>9</sup>Agora, pois, atenda à voz deles, porém advirta-os solenemente e explique-lhes qual será o direito do rei que vier a reinar sobre eles.
+    </blockquote>
+    
+    <h2>Abreviações</h2>
+    <p>Para mostrar o significado de abreviações citadas usa-se a tag &lt;abbr&gt; exemplo: <br> <br>
+    "Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS"</abbr> <br> <br>
+    Note que HTML e CSS é explicado deixando o mouse por cima das palavras
+    </p>
+
+    <h2>Texto invertido (não sei onde vou usar isso um dia)</h2>
+    <p>Para inverter um texto usa-se a tag &lt;bdo&gt;<br>
+        A frase: "O rato roeu a roupa do rei de Roma" fica: <bdo dir="rtl">O rato roeu a roupa do rei de Roma</bdo>
+    </p>
+
+</body>
+</html>

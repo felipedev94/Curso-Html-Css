@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png">
+        <img  src="imagens/foto-g.png" alt="Imagem Grande">
+    </picture>   
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos reporduzir audios em HTML5</p>
+    <audio preload="metadata" controls  >
+        <source src="midia/beethoven-moonlight-sonata-1st-movement.mp3" type="audio/mpeg"> 
+        <source src="midia/beethoven-moonlight-sonata-1st-movement.ogg" type="audio/ogg">
+               <p>Infelizmente seu navegador não possui suporte para os formatos de audios do arquivo <a href="midia/beethoven-moonlight-sonata-1st-movement.mp3" download="Beethoven Moonlight Sonata 1st Movement">Clique</a> aqui para baixar em MP3</p>
+    </audio>
+    
+
+</body>
+</html>
